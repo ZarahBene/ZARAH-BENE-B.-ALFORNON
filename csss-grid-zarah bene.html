@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Gallery</title>
+  <style>
+    header {
+text-align: center;
+text-transform: uppercase;
+color: white;
+
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://media4.giphy.com/media/lcyaEwgNvvoFzpnfDp/giphy.webp?cid=790b7611lynzj9xesm67utmj507i2ho1zjoujie8nf1d3n3z&ep=v1_gifs_search&rid=giphy.webp&ct=gg);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 20px; 
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 10px;
+      color: black;
+    }
+
+    button {
+      color: black;
+      font-size: medium;
+      cursor: pointer;
+      background-color: grey;
+      border-radius: 2px
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #bbb;
+    }
+  
+  </style>
+</head>
+<body>
+
+  <header>
+<H1>
+  CSS GRID Gallery
+</H1>
+
+  </header>
+
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/1172064/pexels-photo-1172064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/1232594/pexels-photo-1232594.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/14924837/pexels-photo-14924837.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/19860798/pexels-photo-19860798/free-photo-of-cold-snow-wood-dawn.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/305827/pexels-photo-305827.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/3047993/pexels-photo-3047993.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/4220967/pexels-photo-4220967.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/3889929/pexels-photo-3889929.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/1643130/pexels-photo-1643130.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/731217/pexels-photo-731217.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/4067356/pexels-photo-4067356.jpeg?auto=compress&cs=tinysrgb&w=300"
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/1078983/pexels-photo-1078983.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/2690764/pexels-photo-2690764.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/2880755/pexels-photo-2880755.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/2659475/pexels-photo-2659475.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Image 3">
+    <p class="caption"></p>
+    <button type="button">click me</button>
+  </div>
+</div>
+
+</body>
+</html>
